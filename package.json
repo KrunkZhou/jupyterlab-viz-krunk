@@ -1,6 +1,6 @@
 {
     "name": "jupyterlab-viz-krunk",
-    "version": "0.1.1",
+    "version": "0.1.6",
     "description": "Graphviz markdown support",
     "keywords": [
         "jupyter",

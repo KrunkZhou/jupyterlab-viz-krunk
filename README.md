@@ -24,6 +24,36 @@ pip uninstall jupyterlab_viz_krunk
 
 ## Example
 
+#### Default settings
+
+settings will be applied globally until the next defaults detected.
+after defaults loads, the page needs to be refreshed or the tab needs to be reopened to take effects.
+
+````
+```graphviz
+defaults {
+    node [shape=rect style="rounded"]
+}
+```
+````
+
+#### Default settings with a graph
+
+````
+```graphviz
+defaults {
+    node [shape=rect style="rounded"]
+}
+digraph {
+    a -> b
+    b -> c
+    a -> c
+}
+```
+````
+
+#### Graphviz render
+
 ````
 ```graphviz
 digraph {
@@ -38,6 +68,22 @@ digraph {
   }
 }
 ```
+````
+
+#### Use Graphviz with HTML elements
+
+````
+<span style="float:right;">
+
+```graphviz
+digraph {
+    a -> b
+    b -> c
+    a -> c
+}
+```
+
+</span>
 ````
 
 ## Contributing
